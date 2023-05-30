@@ -63,4 +63,10 @@ const appMenuItems = <MenuItem>[
     link: '/infinite-scroll',
     icon: Icons.replay_outlined,
   ),
+  MenuItem(
+    title: 'Counter',
+    subtitle: 'Contador generico',
+    link: '/counter',
+    icon: Icons.countertops_outlined,
+  ),
 ];
