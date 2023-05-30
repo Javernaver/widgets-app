@@ -39,4 +39,14 @@ class AppTheme {
       appBarTheme: const AppBarTheme(
         centerTitle: false,
       ));
+
+  // CREAR UNA COPIA DEL LA INSTANCIA DE LA CLASE AGREGANDO LOS PARAMETROS QUE SEAN NECESARIOS SI VIENEN
+  AppTheme copyWith({
+    int? selectedColor,
+    bool? isDarkMode,
+  }) =>
+      AppTheme(
+        selectedColor: selectedColor ?? this.selectedColor,
+        isDarkMode: isDarkMode ?? this.isDarkMode,
+      );
 }
